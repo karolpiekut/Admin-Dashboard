@@ -359,19 +359,21 @@ template {
     grid-template-rows: 1fr 5fr;
 }
 
+/*----------top----------*/
+
 #top {
     background: red;
     grid-area: 1 / 2 / 2 / 3;
 }
+
+/*----------sidebar----------*/
+
 #sidebar {
     background: mediumaquamarine;
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-}
-#main {
-    background: #5a9dff;
-    grid-area: 2 / 2 / 3 / 3;
+    gap: 10px;
 }
 
 #locations {
@@ -386,6 +388,27 @@ template {
     gap: 10px;
 }
 
+/*----------main----------*/
+
+#main {
+    background: #5a9dff;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#your-projects {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+#announcements {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#trending {
+    grid-area: 2 / 3 / 3 / 4;
+}
 
 
 
