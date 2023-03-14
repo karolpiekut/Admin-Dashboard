@@ -412,10 +412,30 @@ template {
 }
 
 a, h1 {
-    font-size: xx-large;
+    font-size: 2em;
     text-decoration: none;
     color: white;
 }
+
+.sidebar-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.icon {
+    filter: invert();
+    display: inline-flex;
+    align-self: center;
+    height: 2em;
+    width: 2em;
+    position: relative;
+}
+
+
 
 /*----------main----------*/
 
@@ -465,6 +485,7 @@ a, h1 {
     display: flex;
     flex-direction: column;
 }
+
 
 
 
