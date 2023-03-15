@@ -13,7 +13,7 @@ html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     height: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Roboto Light", Helvetica, Arial, sans-serif;
 }
 
 /* Sections
@@ -356,8 +356,8 @@ template {
 #main-grid {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 /*----------top----------*/
@@ -410,9 +410,8 @@ template {
     flex-direction: column;
     gap: 10px;
 }
-
 a, h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
     color: white;
 }
@@ -430,14 +429,18 @@ a, h1 {
     filter: invert();
     display: inline-flex;
     align-self: center;
-    height: 2em;
-    width: 2em;
-    position: relative;
+    height: 1.5em;
+    width: 1.5em;
 }
 
-
+.dashboard {
+    height: 2.5em;
+    width: 2.5em;
+}
 
 /*----------main----------*/
+
+
 
 #main {
     background: darkgray;
@@ -484,6 +487,10 @@ a, h1 {
     background: white;
     display: flex;
     flex-direction: column;
+}
+
+p {
+    font-size: 1em;
 }
 
 
