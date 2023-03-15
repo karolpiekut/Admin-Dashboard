@@ -410,6 +410,7 @@ template {
     flex-direction: column;
     gap: 10px;
 }
+
 a, h1 {
     font-size: 1.5em;
     text-decoration: none;
@@ -427,6 +428,7 @@ a, h1 {
 
 .icon {
     filter: invert();
+    padding-right: 1em;
     display: inline-flex;
     align-self: center;
     height: 1.5em;
@@ -436,6 +438,11 @@ a, h1 {
 .dashboard {
     height: 2.5em;
     width: 2.5em;
+    padding-right: 8px;
+}
+
+.main {
+    padding-left: 12px;
 }
 
 /*----------main----------*/
