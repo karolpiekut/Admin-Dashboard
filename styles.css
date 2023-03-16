@@ -44,6 +44,7 @@ main {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    color: white;
 }
 
 /* Grouping content
@@ -86,10 +87,7 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
-abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline dotted; /* 2 */
-}
+
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -363,11 +361,12 @@ template {
 /*----------top----------*/
 
 #top {
-    background: red;
+    background: #f4f4f4;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 #search-bar {
@@ -411,7 +410,7 @@ template {
     gap: 10px;
 }
 
-a, h1 {
+a {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
@@ -419,8 +418,8 @@ a, h1 {
 
 .sidebar-item {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    /*flex-direction: row;
+    justify-content: flex-start;*/
     align-items: center;
     gap: 15px;
     padding-left: 20px;
@@ -448,15 +447,14 @@ a, h1 {
 /*----------main----------*/
 
 
-
 #main {
-    background: darkgray;
+    background: #d8dee6;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-columns: 3fr 3fr 2.5fr;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
+    gap: 20px;
+    padding: 25px;
 }
 
 #your-projects {
@@ -465,15 +463,31 @@ a, h1 {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
-.project {
+.project > p {
+    margin: 5px 0 0 0;
+}
+
+.internal-icon{
+    display: inline-flex;
+    align-self: center;
+    height: 1.5em;
+    width: 1.5em;
+
+}
+
+#projects > .project {
     background: white;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    border-left-color: #e6ad2a;
+    border-left: 3px;
+    padding: 30px;
 }
 
 #announcements {
@@ -484,6 +498,17 @@ a, h1 {
     background: white;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.announcement > p {
+    font-size: 0.8em;
+    margin: 0 10px 0 10px;
+}
+
+.announcement > h4 {
+    margin: 0 10px 0 10px;
 }
 
 #trending {
@@ -494,13 +519,27 @@ a, h1 {
     background: white;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3, h4, h5 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 
 p {
     font-size: 1em;
 }
 
-
+hr.solid {
+    border-top: 1px solid #bbb;
+    width: 100%;
+}
 
 
 
