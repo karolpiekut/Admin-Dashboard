@@ -360,8 +360,8 @@ template {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 0 30px 10px 30px;
-    gap: 20px;
+    padding: 0 30px 5px 30px;
+    gap: 10px;
 
 }
 
